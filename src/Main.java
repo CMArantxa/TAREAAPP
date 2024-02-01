@@ -1,12 +1,16 @@
 import controller.TaskController;
+import models.Task;
 import models.User;
 
 public class Main {
     public static void main(String[] args) {
-        User user= new User();
-        System.out.println(user.login("lolo","1111").toString());
+
 
         TaskController taskController=new TaskController();
+        taskController.login("admin","1234");
+        System.out.println(taskController.getAllTaskByUser());
+
+
 
     }
 }

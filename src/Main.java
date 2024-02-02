@@ -8,7 +8,8 @@ public class Main {
 
         TaskController taskController=new TaskController();
         taskController.login("admin","1234");
-        System.out.println(taskController.getAllTaskByUser());
+        System.out.println(taskController.getAllTask());
+
 
 
 
